@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Home Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<style>body{
+  font-family: Arial, sens-sarif;
+}
+nav{
+  text-align:right;
+}
+.menu-item{
+  font-size:13px;
+  color: rgba(0,0,0,0.87);
+  text-decoration: none;
+  margin-right:16px;
+}
+i{
+  margin-right:16px;
+}
+.menu-item:hover{
+  text-decoration:underline;
+}
+section{
+  text-align:center;
+}
+#google-logo{
+  height:80px;
+}
+#search-box{
+  width:100%;
+  color:#222;
+  border:1px solid #dfe1e5;
+  font-size:13px;
+  padding:14px;
+  border-radius:24px;
+  outline:none;
+  margin-top:24px;
+  margin-bottom:24px;
+}
+#search-box:hover{
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color:rgba(223,225,229,0);
+}
+#search-box:focus{
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color:rgba(223,225,229,0);
+}
+#input-wrapper{
+  position:relative;
+  width:582px;
+  display:inline-block;
+}
+.voice-img{
+  height:23px;
+}
+#input-wrapper > .voice-img{
+  position:absolute;
+  right:0;
+  top:33px;
+}
+.custom-btns{
+  background-color:#f2f2f2;
+  color:#5f6368;
+  height:36px;
+  padding:0 16px;
+  font-size:14px;
+  background-image:linear-gradient(top, #f5f5f5,#f1f1f1);
+  border: 1px solid transparent;
+  box-shadow: 0 1px 1px rgba(0,0,0,0);
+  color:#222;
+}
+.custom-btns:hover{
+  border: 1px solid #c6c6c6;
+  background-image:linear-gradient(top, #f8f8f8,#f1f1f1);
+  box-shadow: 0 1px 1px rgba(0,0,0,2);
+  color:#222;
+}
+.custom-btns:first-of-type{
+  margin-right:16px;
+}
+section{
+  text-align:center;
+  padding-top:11%;
+}
+#app-dropdown{
+  width:269px;
+  padding:10px;
+  border:1px solid #ccc;
+  box-shadow: 0 2px 10px      rgba(0,0,0,2);
+  position:absolute;
+  right:70px;
+  display:none;
+}
+
+#dropdown-wrapper{
+  display:inline-block;
+}
+#dropdown-wrapper:hover #app-dropdown{
+  display:block;
+}
+.app-item{
+  display:inline-block;
+  width:84px;
+  margin-bottom:16px;
+  text-align:center;
+}
+.app-item:hover{
+  border:1px solid rgba(0,0,0,0.2);
+  border-radius:8px;
+}
+.app-item .app-item-img{
+  width:50px;
+  height:50px;
+}
+</style>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="menu-item" href="/">Gmail</a>
+      <a class="menu-item" href="/">Images</a>
+      <div id="dropdown-wrapper">
+        <i class="fa-solid fa-bars"></i>
+        <div id="app-dropdown">
+          <div class="app-item">
+            <img class="app-item-img"    src="https://53.fs1.hubspotusercontent-na1.net/hub/53/hubfs/image8-2.jpg?width=595&height=400&name=image8-2.jpg" alt="google-search">
+            <p>Search</p>
+          </div>
+          <div class="app-item">
+            <img class="app-item-img"      src="https://assets.entrepreneur.com/content/3x2/2000/20190124141200-map1.jpeg" alt="google-Map">
+            <p>Maps</p>
+          </div>
+          <div class="app-item">
+            <img class="app-item-img"      src="https://static.toiimg.com/thumb/106986281.cms?width=400&height=300&resizemode=4&imgsize=8558" alt="google-Drive">
+            <p>Drive</p>
+          </div>
+          <div class="app-item">
+            <img class="app-item-img"      src="https://static-00.iconduck.com/assets.00/gmail-icon-1024x1024-09wrt8am.png" alt="google-search">
+            <p>Gmail</p>
+          </div>
+          <div class="app-item">
+            <img class="app-item-img"      src="https://www.brandeis.edu/its/_files/google-meet-logo.png" alt="google-search">
+            <p>Meet</p>
+          </div>
+          <div class="app-item">
+            <img class="app-item-img"      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/640px-YouTube_social_white_square_%282017%29.svg.png" alt="google-search">
+            <p>Youtube</p>
+          </div>
+        </div>
+      </div>
+      <i class="fa-solid fa-user"></i>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <img id="google-logo"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png" alt="google image">
+      <br>
+      <div id="input-wrapper">
+        <input id="search-box">
+        <img class="voice-img" src="https://blog.expertrec.com/wp-content/uploads/2019/06/Google-Voice.jpg" alt=""
+      </div>
+        <div>
+        <button class="custom-btns">Google Search</button>
+        <button class="custom-btns">I'm Feeling Lucky</button>
+          </div>
+        
+    </section>
+  </main>
+</body>
+</html>

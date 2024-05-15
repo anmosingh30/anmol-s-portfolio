@@ -1,0 +1,352 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    background-color: rgb(0, 0, 33);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+span{
+    color: rgb(86, 86, 219);
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(0, 0, 50);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover{
+    color: rgb(77, 77, 180)
+}
+.left-nav{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+#home{
+    display: flex;
+    justify-content: space-around;
+    width: 86vw;
+    height: 70vh;
+    margin: auto auto;
+    margin-top: 5%;
+    margin-bottom: 9%;
+}
+.left-box{
+    width: 43vw;
+    height: 70vh;
+    font-size: 3.5rem;
+    font-weight: 500;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.btns{
+    color: #fff;
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    margin-left: 15px;
+    cursor: pointer;
+    background-color: rgb(93, 93, 185);
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,1);
+-moz-box-shadow: 1px 1px 10px 1px rgba(0,0,0,1);
+box-shadow: 1px 1px 10px 1px rgba(0,0,0,1);
+}
+.btns:hover{
+    background-color: rgb(35, 35, 93);
+}
+.right-box{
+    width: 40vw;
+    height: 70vh;
+    margin-left: 10px;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.profile-img{
+    height: 80%;
+    border-radius: 10px;
+    border-bottom: 3px solid #fff;
+    z-index: 2;
+}
+.gif-img{
+    position: absolute;
+    height: 50.6%;
+    mix-blend-mode: multiply;
+    opacity: 0.2;
+    z-index: 1;
+}
+/* about-section */
+
+.about-section{
+    display: flex;
+    justify-content: space-around;
+    width: 86vw;
+    height: 77vh;
+    margin: auto auto;
+}
+.about-text{
+    font-size: 2.6rem;
+    font-weight: 520;
+    word-spacing: 5px;
+}
+.about-image{
+    height: 80%;
+    float: left;
+    margin-right: 20px;
+    border-radius: 25px;
+    opacity: 0.5;
+}
+
+/* skills */
+
+#skills{
+    height: 120vh;
+    padding-top: 22%;
+    text-align: center;
+}
+.skills-heading{
+    font-size: 4rem;
+    font-weight: 550;
+    word-spacing: 5px;
+    font-style: italic;
+    text-transform: capitalize;
+    
+}
+.skill-text{
+    font-size: 1.6rem;
+    margin-top: 5%;
+}
+.slider{
+    height: 160px;
+    margin: 0px 30px;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    transition: transform 0.2s ease;
+}
+.slider:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+/* certificates */
+
+#certificates{
+    height: 100vh;
+    text-align: center;
+}
+.certificate-heading{
+    font-size: 4rem;
+    font-weight: 550;
+    word-spacing: 5px;
+    padding-top: 10%;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.carousel {
+    width: 95%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin: auto auto;
+}
+
+.carousel-slide {
+    display: none;
+    width: 96%;
+    height: auto;
+    margin: auto auto;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* projects */
+
+#project{
+    margin-top: 45%;
+    height: 100vh;
+    text-align: center;
+}
+.project-heading{
+    font-size: 4rem;
+    font-weight: 550;
+    word-spacing: 5px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.projects{
+    display: flex;
+    height: 55vh;
+    width: 93%;
+    margin: auto auto;
+    margin-top: 20px;
+}
+.box{
+    border: 1px solid black;
+    height: 330px;
+    width: 420px;
+    margin: auto auto;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+.project-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.project-img:hover{
+    opacity: 0.8;
+}
+
+/* contact us page */
+
+#contact{
+    height: 90vh;
+    margin-top: 18%;
+}
+.contact-us-box{
+    display: flex;
+    height: 85vh;
+    width: 90vw;
+    margin: auto auto;
+    border-radius: 25px;
+    box-shadow: 0px 0px 6px 2px rgba(54,39,54,1);
+}
+.left-contact-box{
+    height: 85vh;
+    width: 55vw;
+    text-align: center;
+    border-radius: 25px 0px 0px 25px;
+    background-color: #090F1B;
+    
+}
+.contact-heading{
+    word-spacing: 3px;
+    margin-top: 40px;
+    font-size: 2rem;
+    font-weight: 550;
+    text-transform: capitalize;
+}
+form{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+input{
+    font-size: 3vb;
+    border: none;
+    padding: 12px 126px;
+    background-color: #081935;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 30px;
+    color: #fff;
+    text-transform: capitalize;
+}
+textarea{
+    border-radius: 10px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #081935;
+    text-transform: capitalize;
+}
+::placeholder{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.submit-btn{
+    background-color:  rgb(86, 86, 219);
+    font-size: 3vb;
+    padding: 5px 45px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+}
+.right-contact-box{
+    height: 85vh;
+    width: 35vw;
+    border-radius: 0px 25px 25px 0px;
+    /* background-color: #0F203C; */
+    background-image: url('contact-image.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+/* footer */
+footer{
+    position: relative;
+    height: 14vh;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #04132d;
+}
+.copyright{
+    padding-top: 30px;
+    /* padding-bottom: 30px; */
+}
+#top-btn{
+    position: absolute;
+    right: 3%;
+    top: 30%;
+    width: 45px;
+    height: 45px;
+    /* border-radius: 3px; */
+    background-color: rgb(78, 78, 224);
+    transition: transform 0.3s ease-in;
+}
+.top-sign{
+    height: 25px;
+    margin: auto auto;
+    margin-top: 8px;
+}
+#top-btn:hover{
+    transform: scale(1.1);
+}
+.whatsapp-icon{
+    height: 20px;
+}
+.whatsapp-icon{
+    position: absolute;
+    right: 8%;
+    top: 30%;
+    height: 50px;
+    filter: brightness(110%);
+}
+
+
+/* ****** Responsive design code ****** */
+
+@media only screen and (max-width: 767px) {
+    
+  }
